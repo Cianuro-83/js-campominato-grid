@@ -1,4 +1,4 @@
-console.log("Ciao Cianuro... oggi si gioca a CAMPO MINATO");
+console.log("Ciao Cianuro... oggi si gioca a CAMPO MINATO: BONUS");
 // .....................................................................................................RICHIAMO ELEMENTI DAL DOM
 // .....................................................................................................
 const grigliaElement = document.getElementById("griglia");
@@ -38,14 +38,14 @@ playBtnElement.addEventListener("click", function () {
     //   AGGIUNGO COMPORTAMENTO AL CLICK DELLA SINGOLA CELLA
     cellElement.addEventListener("click", function () {
       console.log("Hai cliccato sulla cella " + index);
-      //   cellElement.classList.add("on-click");
+      cellElement.classList.add("on-click");
     });
     emptyBtnElement.addEventListener("click", function () {
       //   playBtnElement.classList.remove("d-none");
       emptyBtnElement.classList.remove("d-none");
-      //   cellElement.classList.remove("on-click");
+      cellElement.classList.remove("on-click");
       console.clear();
-      console.log("STAI INIZIANDO UNA NUOVA PARTITA");
+      console.log("STAI INIZIANDO UNA NUOVA PARTITA DEL BONUS");
     });
     // CHIUSURA CICLO FOR
   }

@@ -22,7 +22,8 @@ playBtnElement.addEventListener("click", function () {
     console.log(index);
     let cellElement = document.createElement("div");
     cellElement.classList.add("cella");
-    cellElement = `ciao`;
+    grigliaElement.append(cellElement);
+    cellElement.style["width"] = "calc(100% / " + gridSize + ")";
     console.log(cellElement);
     // CHIUSURA CICLO FOR
   }

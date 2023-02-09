@@ -24,7 +24,7 @@ GRIGLIA
   border: 2px solid red;
 }
 
-#griglia > * {
+#griglia > .cella {
   aspect-ratio: 1/1;
   border: 2px solid greenyellow;
   display: flex;

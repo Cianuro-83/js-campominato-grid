@@ -20,6 +20,10 @@ playBtnElement.addEventListener("click", function () {
   for (let i = 0; i < griCell; i++) {
     let index = i + 1;
     console.log(index);
+    let cellElement = document.createElement("div");
+    cellElement.classList.add("cella");
+    cellElement = `ciao`;
+    console.log(cellElement);
     // CHIUSURA CICLO FOR
   }
   // ...................................................................................................CHIUSURA addEventListener su BOTTONE PLAY

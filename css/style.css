@@ -5,3 +5,30 @@ body {
   background-color: black;
   color: white;
 }
+/* **************************
+GRIGLIA
+************************** */
+#play-button {
+  color: red;
+  font-size: 2rem;
+  font-weight: bold;
+}
+#play-button:hover {
+  color: #fbc107;
+  background-color: red;
+  border: 4px solid blue;
+}
+#griglia {
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid red;
+}
+
+#griglia > * {
+  aspect-ratio: 1/1;
+  border: 2px solid greenyellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}

@@ -15,13 +15,7 @@ let griCell = gridSize * gridSize;
 // .....................................................................................................
 playBtnElement.addEventListener("click", function () {
   console.log("INIZIO GIOCO");
-  playBtnElement.classList.add("d-none");
-  emptyBtnElement.classList.remove("d-none");
-
-  //   emptyBtnElement.addEventListener("click", function () {
-  //     // playBtnElement.classList.remove("d-none");
-  //     emptyBtnElement.classList.add("d-none");
-  //   });
+  grigliaElement.innerHTML = "";
 
   // .....................................................................................................CICLO LE CELLE CON FOR PER CREARE LA GRIGLIA SUL DOM
   // ..............................................................................
@@ -38,18 +32,14 @@ playBtnElement.addEventListener("click", function () {
     //   AGGIUNGO COMPORTAMENTO AL CLICK DELLA SINGOLA CELLA
     cellElement.addEventListener("click", function () {
       console.log("Hai cliccato sulla cella " + index);
-      //   cellElement.classList.add("on-click");
     });
-    emptyBtnElement.addEventListener("click", function () {
-      //   playBtnElement.classList.remove("d-none");
-      emptyBtnElement.classList.remove("d-none");
-      //   cellElement.classList.remove("on-click");
-      console.clear();
-      console.log("STAI INIZIANDO UNA NUOVA PARTITA");
-    });
+
     // CHIUSURA CICLO FOR
   }
-
+  // .....................................................................................................RESETTO LA CONSOLE PER INIZIO  UOVA PARTITA
+  // .....................................................................................................
+  console.clear();
+  console.log("STAI INIZIANDO UNA NUOVA PARTITA");
   // ...................................................................................................CHIUSURA addEventListener su BOTTONE PLAY
   // .....................................................................................................
 });
